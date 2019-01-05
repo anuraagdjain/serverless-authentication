@@ -1,0 +1,29 @@
+service: serverless-authentication # NOTE: update this with your service name
+
+provider:
+  name: aws
+  profile: serverless-authentication
+  runtime: nodejs8.10
+  stage: ${opt:stage,'development'}
+  region: us-west-2
+  environment: ${file(secrets.yml):${self:provider.stage}}
+
+custom:
+  webpack:
+    includeModules: true
+    packager: yarn
+    packagePath: './package.json'  
+
+package:
+  individually: true
+  exclude:
+    - 'node_modules/**'
+    - 'secrets.yml'
+    - '.git/**'
+
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+functions:
+      

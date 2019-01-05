@@ -1,0 +1,30 @@
+{
+  "name": "serverless-authentication",
+  "version": "1.0.0",
+  "description": "Serverless App with JWT Authentication",
+  "main": "handler.js",
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "serverless-offline": "^3.31.3",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.28.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuraagdjain/serverless-authentication.git"
+  },
+  "keywords": [
+    "serverless",
+    "jwt"
+  ],
+  "author": "@anuraagdjain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anuraagdjain/serverless-authentication/issues"
+  },
+  "homepage": "https://github.com/anuraagdjain/serverless-authentication#readme"
+}
