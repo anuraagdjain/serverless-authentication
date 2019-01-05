@@ -1,0 +1,15 @@
+login:
+  handler: 'src/handlers/auth/login.handler'
+  events:
+    - http:
+        method: post
+        path: 'v1/auth/login'
+        cors: true
+
+signup:
+  handler: 'src/handlers/auth/signup.handler'
+  events:
+    - http:
+        method: post
+        path: 'v1/auth/signup'
+        cors: true        

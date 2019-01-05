@@ -12,7 +12,7 @@ custom:
   webpack:
     includeModules: true
     packager: yarn
-    packagePath: './package.json'  
+    packagePath: './package.json'
 
 package:
   individually: true
@@ -26,4 +26,5 @@ plugins:
   - serverless-webpack
 
 functions:
+  - ${file(./src/routes/auth.routes.yml)}
       
