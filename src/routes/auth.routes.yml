@@ -13,3 +13,6 @@ signup:
         method: post
         path: 'v1/auth/signup'
         cors: true        
+
+userAuthHandler:
+  handler: src/authorizers/user.auth.handler        

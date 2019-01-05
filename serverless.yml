@@ -13,6 +13,11 @@ custom:
     includeModules: true
     packager: yarn
     packagePath: './package.json'
+  authorizers:
+    user:
+      name: userAuthHandler
+      identitySource: method.request.header.Authorization
+      type: request        
 
 package:
   individually: true
@@ -27,4 +32,5 @@ plugins:
 
 functions:
   - ${file(./src/routes/auth.routes.yml)}
+  - ${file(./src/routes/users.routes.yml)}
       
