@@ -10,4 +10,4 @@ Serverless App with JWT Based Authentication using custom authorizers
 https://documenter.getpostman.com/view/2896746/RznCsfqR
 
 ### TODO
-- [ ] ESLint
+- [x] ESLint
