@@ -1,0 +1,8 @@
+getUser:
+  handler: 'src/handlers/users/get.handler'
+  events:
+    - http:
+        method: get
+        path: 'v1/users/{id}'
+        cors: true        
+        authorizer: ${self:custom.authorizers.user}
